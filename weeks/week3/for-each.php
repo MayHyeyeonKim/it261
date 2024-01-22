@@ -21,18 +21,35 @@ echo '</ul>';
 
 echo '<h2>Movies and Shows list which will have both a key and va value</h2>';
 
+// $shows = [
+//     'Apple TV' => 'Severance',
+//     'Apple TV' => 'For All Mankind',
+//     'Showtime' => 'City on a Hill',
+//     'Showtime' => 'Homeland',
+//     'Movie' => 'Top Gun Maverick',
+//     'HBO MAX' => 'Hacks',
+// ];
 $shows = [
-    'Apple TV' => 'Severance',
-    'Apple TV' => 'For All Mankind',
-    'Showtime' => 'City on a Hill',
-    'Showtime' => 'Homeland',
-    'Movie' => 'Top Gun Maverick',
-    'HBO MAX' => 'Hacks',
+    'Apple TV' => ['Severance', 'For All Mankind'],
+    'Showtime' => ['City on a Hill', 'Homeland'],
+    'Movie' => ['Top Gun Maverick'],
+    'HBO MAX' => ['Hacks'],
 ];
 
+// echo '<ul>';
+// foreach($shows as $key => $value){
+//     echo '<li> <b>'.$key.'</b>: '.$value.' </li>';
+// }
+// echo '</ul>';
+
 echo '<ul>';
-foreach($shows as $key => $value){
-    echo '<li> <b>'.$key.'</b>: '.$value.' </li>';
+foreach ($shows as $platform => $titles) {
+    echo '<li><b>' . $platform . '</b>: ';
+    echo '<ul>';
+    foreach ($titles as $title) {
+        echo '<li>' . $title . '</li>';
+    }
+    echo '</ul></li>';
 }
 echo '</ul>';
 
