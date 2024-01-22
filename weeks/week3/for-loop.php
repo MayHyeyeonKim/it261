@@ -57,7 +57,7 @@
         ?>
     </table>
 
-    <h2>I complete a kilometer/mileage table on my own!</h2>
+    <h2>completed a kilometer/mileage table on my own!</h2>
     <table>
         <tr>
             <th>Kilometer</th>
