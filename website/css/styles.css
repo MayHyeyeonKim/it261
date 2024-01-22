@@ -61,7 +61,28 @@ aside li {
     clear: both;
     overflow: hidden;
 }
-
+/*website/daily.php*/
+#wrapper .UndergroundTourCSS {
+    background: #c3c390;   
+}
+#wrapper .GasWorksParkCSS {
+    background: #bca58e;   
+}
+#wrapper .SeattleAquariumCSS {
+    background: #f5d4b0;   
+}
+#wrapper .KerryParkCSS {
+    background: #e3d5ca;   
+}
+#wrapper .PikePlaceCSS {
+    background: #d5bdaf;   
+}
+#wrapper .ChihulyCSS {
+    background: #a7a388; 
+}
+#wrapper .SpaceNeedleCSS {
+    background: #9b8274; 
+}
 /* Hero Section Styles */
 #hero {
     /* background: #ff4500; */
