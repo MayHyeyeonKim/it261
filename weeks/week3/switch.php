@@ -48,7 +48,7 @@ switch ($today) {
 
     case 'Saturday':
         $coffee = '<h2>Saturday is our Green Tea Latte Day!</h2>';
-        $pic = 'green-tea.png';
+        $pic = 'greentea-latte.png';
         $alt = 'Green Tea';
         $content = '<p> <b>A green tea latte is simply a latte</b> made with green tea 
     instead of espresso. Traditional lattes are a blend of steamed milk 
@@ -61,7 +61,7 @@ switch ($today) {
         $pic = 'coffee.png';
         $alt = 'Regular Coffee';
         $content = '<p> Boston commuters have their routines timed down 
-    to the minute. Most folks can tell if they \ll be late to work 
+    to the minute. Most folks can tell if they\'ll be late to work 
     by the length of the line at Dunkin\' Donuts.
     That\'s why “coffee regular" is such a comforting phrase.
     For anyone who\'s lived here more than a week,
@@ -134,37 +134,77 @@ switch ($today) {
             box-sizing: border-box;
         }
 
-
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
         #wrapper {
-            width: 940px;
+            width: 90%;
             margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
-
 
         h1,
-        h2,
-        img {
-            margin-bottom: 10px;
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
         }
 
+        ul {
+            margin: 20px, 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 2px;
+        }
+
+        img {
+            float: left;
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
         p {
-            margin-bottom: 20px;
+            overflow: hidden;
+            margin-top: 40px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            padding: 0px 10px;
+            color: #555;
+            background: #d6ccc2;
+            border-radius: 3px;
+        }
+        #oneline{
+            margin: 20px;
         }
     </style>
 </head>
 
 <body>
     <div id="wrapper">
-        <h1>My Wonderful Switch Classwork Exercise (Not the daily homework)</h1>
+        <h1>May's Wonderful Switch Classwork Exercise</h1>
         <?php
         echo $coffee;
         ?>
         <img src="./images/<?php echo $pic; ?>" alt="<?php echo $alt; ?>">
-        <?php echo $content; ?>
+        <div id="content-wrapper">
+            <?php echo $content; ?>
+        </div>
         <h2>Check out our Daily Specials</h2>
-        <p><i>Please complete ALL of the days of the week!!!</i></p>
+        <div id="oneline"><i>ALL of the days of the week!!!</i></div>
         <ul>
             <li><a href="switch.php?today=Sunday">Sunday</a></li>
             <li><a href="switch.php?today=Monday">Monday</a></li>
@@ -174,7 +214,6 @@ switch ($today) {
             <li><a href="switch.php?today=Friday">Friday</a></li>
             <li><a href="switch.php?today=Saturday">Saturday</a></li>
         </ul>
-
     </div>
     <!-- end wrapper -->
 </body>
