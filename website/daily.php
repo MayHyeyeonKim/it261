@@ -140,11 +140,11 @@ switch($today) {
       <li><a href="daily.php?today=Sunday">Sunday</a></li>
     </ul>
     <h3> Admission fee or Entrance fee</h3>
-    <blockfee>
+    <!-- <blockfee>
       <p>
         <?php echo $fee; ?>
       </p>
-    </blockfee>
+    </blockfee> -->
   </aside>
 </div>
 <?php include 'includes/footer.php'; ?>
