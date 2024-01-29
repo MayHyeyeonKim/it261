@@ -42,7 +42,6 @@ if (
     <label>Comments</label>
     <textarea name="comments"></textarea>
 
-
     <input type="submit" value="Sent it!">
 
     </form>
