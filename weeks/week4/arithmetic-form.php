@@ -60,7 +60,8 @@
             $_POST['comments'])
         ) { //start nest
     
-            echo 'Please fill out Coffee fields with a name and number to text!';
+            echo '<p class="error">Please fill out Coffee fields with a name and number to text!</p>';
+            echo '<br>';
 
         } else {
             //define post var

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>May's week4 exercise, form3.php</h1>
+    <h1>May's form3.php</h1>
     <form action="" method="post">
         <fieldset>
             <label>First Name</label>
