@@ -1,47 +1,41 @@
 <?php
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
-switch (THIS_PAGE) {
+switch(THIS_PAGE) {
   case 'index.php':
-    $title = 'Home page of May\'s Website Project';
-    $body = 'home';
-    break;
+      $title = 'May\'s Home';
+      $body = 'home';
+      break;
 
   case 'about.php':
-    $title = 'About page of May\'s Website Project';
-    $body = 'about inner';
-    break;
+      $title = 'About Page';
+      break;
 
   case 'daily.php':
-    $title = 'Daily page of May\'s Website Project';
-    $body = 'daily inner';
-    break;
+      $title = 'May\'s Daily Page';
+      $body = 'daily inner';
+      break;
 
-  case 'project.php':
-    $title = 'Project page of May\'s Website Project';
-    $body = 'project inner';
-    break;
+  case 'Troubleshoot.php':
+      $title = 'Troubleshoot Page';
+      break;
 
   case 'contact.php':
-    $title = 'Contact page of May\'s Website Project';
-    $body = 'contact inner';
-    break;
+      $title = 'May\'s Contact Page';
+      $body = 'contact inner';
+      break;
 
   case 'gallery.php':
-    $title = 'Gallery page of May\'s Website Project';
-    $body = 'gallery inner';
-    break;
+      $title = 'Gallery Page';
+      break;
 }
 
-// our navigational array!
-$nav = array(
-  'index.php' => 'Home',
-  'about.php' => 'About',
-  'daily.php' => 'Daily',
-  'project.php' => 'Project',
-  'contact.php' => 'Contact',
-  'gallery.php' => 'Gallery',
-);
+$nav['website/daily.php'] = 'Switch';
+$nav['troubleshoot.php'] = 'Troubleshoot';
+$nav['calculator.php'] = 'Calculator';
+$nav['email.php'] = 'Email';
+$nav['gallery.php'] = 'Gallery';
+$nav['database.php'] = 'Database';
 ?>
 <!DOCTYPE html>
 <html lang="en">

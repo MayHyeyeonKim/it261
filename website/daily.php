@@ -16,8 +16,8 @@ switch(THIS_PAGE) {
       $body = 'daily inner';
       break;
 
-  case 'project.php':
-      $title = 'project Page';
+  case 'Troubleshoot.php':
+      $title = 'Troubleshoot Page';
       break;
 
   case 'contact.php':
@@ -30,12 +30,12 @@ switch(THIS_PAGE) {
       break;
 }
 
-$nav['index.php'] = 'Home';
-$nav['about.php'] = 'About';
-$nav['daily.php'] = 'Daily';
-$nav['project.php'] = 'Project';
-$nav['contact.php'] = 'Contact';
+$nav['website/daily.php'] = 'Switch';
+$nav['troubleshoot.php'] = 'Troubleshoot';
+$nav['calculator.php'] = 'Calculator';
+$nav['email.php'] = 'Email';
 $nav['gallery.php'] = 'Gallery';
+$nav['database.php'] = 'Database';
 
 if (isset($_GET['today'])) {
   $today = $_GET['today'];
