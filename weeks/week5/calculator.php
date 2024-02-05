@@ -10,7 +10,7 @@
     <h2> May's Travel Calculator</h2>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>" method="post">
 <fieldset>
-    <label>Name</label>
+    <label>NAME</label>
     <input type="text" name="name" value="<?php if(isset($_POST['name'])) echo htmlspecialchars($_POST['name']) ;?>">
     <label>Total miles driving?</label>
     <input type="miles" name="miles" value="<?php if(isset($_POST['miles'])) echo htmlspecialchars($_POST['miles']) ;?>">
