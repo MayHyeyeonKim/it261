@@ -54,11 +54,11 @@
             <label>Choose you banking institucion</label>
 
             <select name="bank">
-                <option value="" NULL <?php if (
+                <!-- <option value="" NULL <?php if (
                     isset($_POST['bank'])
                     && $_POST['bank'] == NULL
                 )
-                    echo 'selected ="unselected"'; ?>>Select one!</option>
+                    echo 'selected ="unselected"'; ?>>Select one!</option> -->
 
                 <option value="boa" <?php if (
                     isset($_POST['bank'])

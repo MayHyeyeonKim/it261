@@ -5,175 +5,199 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator.php</title>
-    <link href="css/styles2.css" type="text/css" rel="stylesheet">
+    <title>Currency - if/else - EXTRA CREDIT (20 points)</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
 
+<body>
+<h1> Currency - if/else - EXTRA CREDIT (20 points)</h1>
 
-    <h2> May's Travel Calculator</h2>
+    <!-- https://www.geeksforgeeks.org/how-to-prevent-xss-with-html-php/ -->
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
         <fieldset>
             <label>NAME</label>
-            <input type="text" name="name"
-                value="<?php if (isset($_POST['name'])) {
-                    echo htmlspecialchars($_POST['name']);
-                } ?>">
+            <input type="text" name="name" value="<?php if (isset($_POST['name']))
+                echo htmlspecialchars($_POST['name']); ?>">
 
-            <label>Total miles driving?</label>
-            <input type="number" name="miles"
-                value="<?php if (isset($_POST['miles'])) {
-                    echo htmlspecialchars($_POST['miles']);
-                } ?>">
+            <label>EMAIL</label>
+            <input type="email" name="email" value="<?php if (isset($_POST['email']))
+                echo htmlspecialchars($_POST['email']); ?>">
 
-            <label>How fast do you typically drive?</label>
-            <input type="speed" name="speed"
-                value="<?php if (isset($_POST['speed'])) {
-                    echo htmlspecialchars($_POST['speed']);
-                } ?>">
+            <label>How much money do you have?</label>
+            <input type="number" name="amount" value="<?php if (isset($_POST['amount']))
+                echo htmlspecialchars($_POST['amount']); ?>">
 
-            <label>How many hours per day do you plan on driving?</label>
-            <input type="hours" name="hours"
-                value="<?php if (isset($_POST['hours'])) {
-                    echo htmlspecialchars($_POST['hours']);
-                } ?>">
-
-            <label>Price of gas</label>
+            <!-- time for our radio buttom that has an additional attribute of value -->
+            <label>Choose your currency</label>
             <ul>
-                <li><input type="radio" name="price" value="3.00" <?php if (isset($_POST['price']) && $_POST['price'] == 3.00) {
-                    echo 'checked="checked"';
-                } ?>> $3.00 </li>
-                <li><input type="radio" name="price" value="3.50" <?php if (isset($_POST['price']) && $_POST['price'] == 3.50) {
-                    echo 'checked="checked"';
-                } ?>> $3.50 </li>
-                <li><input type="radio" name="price" value="4.00" <?php if (isset($_POST['price']) && $_POST['price'] == 4.00) {
-                    echo 'checked="checked"';
-                } ?>> $4.00 </li>
+                <li><input type="radio" name="currency" value="0.017" <?php
+                if (isset($_POST['currency']) && $_POST['currency'] == 0.017)
+                    echo 'checked="checked"'; ?>> Rubles </li>
+
+                <li><input type="radio" name="currency" value="0.76" <?php
+                if (isset($_POST['currency']) && $_POST['currency'] == 0.76)
+                    echo 'checked="checked"'; ?>> Canadian Dollars </li>
+
+                <li><input type="radio" name="currency" value="1.15" <?php
+                if (isset($_POST['currency']) && $_POST['currency'] == 1.15)
+                    echo 'checked="checked"'; ?>> Pounds </li>
+
+                <li><input type="radio" name="currency" value="1.00" <?php
+                if (isset($_POST['currency']) && $_POST['currency'] == 1.00)
+                    echo 'checked="checked"'; ?>> Euros </li>
+
+                <li><input type="radio" name="currency" value="0.0074" <?php
+                if (isset($_POST['currency']) && $_POST['currency'] == 0.0074)
+                    echo 'checked="checked"'; ?>> Yen </li>
             </ul>
 
-            <label>Fuel efficiency</label>
-            <select name="efficiency">
-                <option value="" NULL <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == null) {
-                    echo 'selected ="unselected"';
-                } ?>>Select one!</option>
-                <option value="10 mpg or less" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '10 mpg or less') {
-                    echo 'selected ="selected"';
-                } ?>>10 mpg or less</option>
-                <option value="11 - 15 mpg" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '11 - 15 mpg') {
-                    echo 'selected ="selected"';
-                } ?>>11 - 15 mpg</option>
-                <option value="16 - 20 mpg" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '16 - 20 mpg') {
-                    echo 'selected ="selected"';
-                } ?>>16 - 20 mpg</option>
-                <option value="21 - 25 mpg" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '21 - 25 mpg') {
-                    echo 'selected ="selected"';
-                } ?>>21 - 25 mpg</option>
-                <option value="26 - 30 mpg" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '26 - 30 mpg') {
-                    echo 'selected ="selected"';
-                } ?>>26 - 30 mpg</option>
-                <option value="31 - 35 mpg" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '31 - 35 mpg') {
-                    echo 'selected ="selected"';
-                } ?>>31 - 35 mpg</option>
-                <option value="36 - 40 mpg" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '36 - 40 mpg') {
-                    echo 'selected ="selected"';
-                } ?>>36 - 40 mpg</option>
-                <option value="41 - 45 mpg" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '41 - 45 mpg') {
-                    echo 'selected ="selected"';
-                } ?>>41 - 45 mpg</option>
-                <option value="46 mpg or more" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '46 mpg or more') {
-                    echo 'selected ="selected"';
-                } ?>>46 mpg or more</option>
+            <label>Choose you banking institucion</label>
+
+            <select name="bank">
+                <!-- <option value="" NULL <?php if (
+                    isset($_POST['bank'])
+                    && $_POST['bank'] == NULL
+                )
+                    echo 'selected ="unselected"'; ?>>Select one!</option> -->
+
+                <option value="boa" <?php if (
+                    isset($_POST['bank'])
+                    && $_POST['bank'] == 'boa'
+                )
+                    echo 'selected ="selected"'; ?>>Bank Of America</option>
+
+                <option value="chase" <?php if (
+                    isset($_POST['bank'])
+                    && $_POST['bank'] == 'chase'
+                )
+                    echo 'selected ="selected"'; ?>>Chase Bank</option>
+
+                <option value="banner" <?php if (
+                    isset($_POST['bank'])
+                    && $_POST['bank'] == 'banner'
+                )
+                    echo 'selected ="selected"'; ?>>Banner Bank</option>
+
+                <option value="wells fargo" <?php if (
+                    isset($_POST['bank'])
+                    && $_POST['bank'] == 'wells fargo'
+                )
+                    echo 'selected ="selected"'; ?>>Wells Fargo</option>
+
+                <option value="becu" <?php if (
+                    isset($_POST['bank'])
+                    && $_POST['bank'] == 'becu'
+                )
+                    echo 'selected ="selected"'; ?>>Boeing Credit Union</option>
             </select>
 
-            <input type="submit" value="Calculate">
-            <p><a href="">Reset</a></p>
+            <input type="submit" value="Convert it">
+
+            <p><a href="">Reset it!</a></p>
+
         </fieldset>
+
     </form>
 
     <?php
+    // we will start with the server request method
+// then, we will ask ourselves if any fields are empty
+// if the fields are not empty, we will elseif they are set
+    
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if (empty($_POST['name'])) {
             echo '<p class="error">Please fill out your name!</p>';
         }
 
-        if (empty($_POST['miles'])) {
-            echo '<p class="error">Please fill out your total driving miles!</p>';
+        if (empty($_POST['email'])) {
+            echo '<p class="error">Please fill out your email!</p>';
         }
 
-        if (empty($_POST['speed'])) {
-            echo '<p class="error">Please fill out how fast will you be driving!</p>';
+        if (empty($_POST['amount'])) {
+            echo '<p class="error">Please fill out your amount!</p>';
         }
 
-        if (empty($_POST['hours'])) {
-            echo '<p class="error">How many hours per day would you like to drive?</p>';
+        if (empty($_POST['currency'])) {
+            echo '<p class="error">Please check your currency!</p>';
         }
 
-        if (empty($_POST['price'])) {
-            echo '<p class="error">Your cost of gas, please!</p>';
-        }
-
-        if ($_POST['efficiency'] == NULL) {
-            echo '<p class="error">Please select your car\'s efficienc!</p>';
+        if ($_POST['bank'] == NULL) {
+            echo '<p class="error">Please choose your banking institution!</p>';
         }
 
         if (
             isset($_POST['name'],
-            $_POST['miles'],
-            $_POST['speed'],
-            $_POST['hours'],
-            $_POST['price'],
-            $_POST['efficiency'])
+            $_POST['email'],
+            $_POST['amount'],
+            $_POST['currency'],
+            $_POST['bank'])
         ) {
             $name = $_POST['name'];
-            $miles = (int) $_POST['miles'];
-            $speed = (int) $_POST['speed'];
-            $hours = (int) $_POST['hours'];
-            $gas = $_POST['price'];
-            $efficiency = (int) $_POST['efficiency'];
-            if ($efficiency == 0) {
-                $efficiency = 1;
-            }
+            $email = $_POST['email'];
+            $amount = floatval($_POST['amount']);
+            $currency = floatval($_POST['currency']);
+            $bank = $_POST['bank'];
+            $dollars = $amount * $currency;
 
-            $usd = ($miles / $efficiency) * $gas;
-            if ($speed == 0) {
-                $speed = 1;
-            }
-
-            $drive_time = $miles / $speed;
-            if ($hours == 0) {
-                $hours = 1;
-            }
-            $day = ($drive_time / $hours);
-            $fuel = $miles / $efficiency;
-
-            if (
-                !empty($name &&
-                $miles && $speed && $hours && $gas && $efficiency)
-            ) {
+            if (!empty($name && $email && $amount && $currency && $bank)) {
 
                 echo '
-                    <div class="box">
-                        <h2>Hello ' . $name . '!</h2>
-                        <p>Your trip would cost approximately <b> $' . number_format($usd, 2) . ' USD</b> 
-                        <b> in gas expenses. <br>It would take <b><em>' . number_format($drive_time) . '
-                        hrs</em></b> over a period of <b>' . number_format($day, 1) . '
-                        days</b>, using <b>~' . number_format($fuel, 1)
-                        . ' gallons</b> of gas in the process.</p>
-                    </div>
-                    ';
-            }
 
+<div class="box">
 
+<h2>Hello, ' . $name . '</h2>
+<p>You now have $' . number_format($dollars, 2) . ' American Dollars 
+and it will be deposited in <b>' . $bank . '</b> and we will email you at <b>
+' . $email . '</b> in the next 24 hours!</p>
+</div>
+';
 
+if ($dollars >= 10000) {
+    echo "<div class='box happy'>
+    <h2> I am REALLY happy, because I have $$dollars American Dollars</h2>
+    <iframe width='560' height='370'
+    src='https://www.youtube.com/embed/O5APc0z49wg'>
+    </iframe>
+    </div>";
+    } else {
+        echo "<div class='box sad'>
+        <h2>I am NOT happy because I have $$dollars American Dollars</h2>
+        <iframe width='560' height='370'
+        src='https://www.youtube.com/embed/l5aZJBLAu1E'>
+        </iframe>
+        </div>";
         }
-
-    } // end server request
-    
-
-
-
-
+}
+        }
+    }
     ?>
 
-    </body>
+
+
+
+
+    <div class="line">
+    </div>
+
+    <footer>
+<ul>
+        <li>Copyright &copy;
+            2024</li>
+        <li>All Rights Reserved</li>
+        <li><a href="../index.php">Web Design by May</a></li>
+        <li><a id="html-checker" href="#">HTML Validation</a></li>
+        <li><a id="css-checker" href="#">CSS Validation</a></li>
+        </ul>
+        
+        <script>
+                document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+                document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>  
+</footer>
+
+
+
+</body>
 
 </html>
