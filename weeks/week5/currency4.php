@@ -60,6 +60,8 @@
                 )
                     echo 'selected ="unselected"'; ?>>Select one!</option> -->
 
+<option value="" <?php if (isset($_POST['bank'])&& is_null($_POST['bank']) == NULL)echo 'selected ="unselected"'; ?>>Select one!</option>
+
                 <option value="boa" <?php if (
                     isset($_POST['bank'])
                     && $_POST['bank'] == 'boa'
@@ -140,7 +142,8 @@
             $bank = $_POST['bank'];
             $dollars = $amount * $currency;
 
-            if (!empty($name && $email && $amount && $currency && $bank)) {
+            // if (!empty($name && $email && $amount && $currency && $bank)) {
+                if(!empty($name && $email && $amount && $currency) && ($bank != NULL)){
 
                 echo '
 
