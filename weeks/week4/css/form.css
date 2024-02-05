@@ -1,0 +1,98 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+text-align: center;
+margin: 20px;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+a {
+    /* display: block; */
+    text-align: center;
+}
+
+/* a.reset-link {
+    text-align: center !important;
+} */
+
+.error {
+    color: red;
+    font-style: italic;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.box {
+    margin: 20px auto;
+    width: 400px;
+    border: 3px solid green;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto 10px auto;
+    padding: 10px;
+    border: 3px solid rgb(89, 80, 255);
+    border-radius: 3px;
+}
+
+label {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+fieldset {
+    border: 1px solid rgb(5, 23, 72);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 3px;
+}
+
+input, textarea{
+    width: 80%;
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+input[type="submit"] {
+    width: auto;
+    /* align-self: flex-end; 오른쪽 정렬 */
+    align-self: center;
+    padding: 8px;
+}
+
+span.hot {
+    text-transform: uppercase;
+    color: firebrick;
+}
+
+.box p {
+    margin: 20px 0; 
+}
+
+.box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.box ul li {
+    margin-bottom: 5px;
+}
+
