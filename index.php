@@ -99,8 +99,8 @@
             <ol>
                 <li><a href="weeks/week5/calculator.php">calculator.php</a></li>
                 <li><a href="weeks/week5/calculator2.php">calculator2.php</a></li>
-                <li><a href="weeks/week5/calculator2.php">calculator3.php</a></li>
-                <li><a href="weeks/week5/calculator2.php">calculator4.php</a></li>
+                <li><a href="weeks/week5/calculator3.php">calculator3.php</a></li>
+                <li><a href="weeks/week5/calculator4.php">calculator4.php</a></li>
                 <li><a href="weeks/week5/currency1.php">currency1.php</a></li>
                 <li><a href="weeks/week5/currency2.php">currency2.php</a></li>
                 <li><a href="weeks/week5/currency3.php">currency3.php</a></li>
