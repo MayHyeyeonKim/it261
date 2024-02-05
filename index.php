@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,20 +19,25 @@
 
 <body>
     <header>
-        <h1><a href="index.php">May's Portal Page</a></h1>
+        <div class="may-main">    
+            <div class="php-logo"><a href="index.php"><img src="images/php-logo.svg" alt="Php Logo" /></a></div>
+            <h1><a href="index.php">May's Portal Page</a></h1>
+        </div>
+
         <h2>The navigation below represents our BIG Assignments. </h2>
+        <?php include('includes/header.php');?>
     </header>
     <div id="wrapper">
-        <nav>
+        <!-- <nav>
             <ul>
                 <li><a href="./website/daily.php">Switch</a></li>
                 <li><a href="./website/troubleshoot.php">Troubleshoot</a></li>
-                <li><a href="">Calculator</a></li>
+                <li><a href="./website/calculator.php">Calculator</a></li>
                 <li><a href="">Email</a></li>
                 <li><a href="">Database</a></li>
                 <li><a href="">Gallery</a></li>
             </ul>
-        </nav>
+        </nav> -->
 
         <main>
             <h2><i class="fa fa-heart" style="font-size:20px;color:red"></i>About May </h2>
@@ -100,12 +106,10 @@
                 <li><a href="weeks/week5/calculator.php">calculator.php</a></li>
                 <li><a href="weeks/week5/calculator2.php">calculator2.php</a></li>
                 <li><a href="weeks/week5/calculator3.php">calculator3.php</a></li>
-                <li><a href="weeks/week5/calculator4.php">calculator4.php</a></li>
                 <li><a href="weeks/week5/currency1.php">currency1.php</a></li>
                 <li><a href="weeks/week5/currency2.php">currency2.php</a></li>
                 <li><a href="weeks/week5/currency3.php">currency3.php</a></li>
                 <li><a href="weeks/week5/currency4.php">currency4.php</a></li>
-                <li><a href="weeks/week5/currency-form.php">currency-form.php</a></li>
                 <li><a href="weeks/week5/null.php">null.php</a></li>
             </ol>
         </aside>

@@ -35,7 +35,7 @@
         h1, h2 {
             text-align: center;
             margin: 10px 0;
-            color: green;
+            color: white;
         }
     </style>
 </head>

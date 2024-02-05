@@ -30,12 +30,12 @@ switch(THIS_PAGE) {
       break;
 }
 
-$nav['daily.php'] = 'Switch';
-$nav['troubleshoot.php'] = 'Troubleshoot';
-$nav['calculator.php'] = 'Calculator';
-$nav['email.php'] = 'Email';
-$nav['gallery.php'] = 'Gallery';
-$nav['database.php'] = 'Database';
+$nav['website/daily.php'] = 'Switch';
+$nav['website/troubleshoot.php'] = 'Troubleshoot';
+$nav['website/calculator.php'] = 'Calculator';
+$nav['website/email.php'] = 'Email';
+$nav['website/gallery.php'] = 'Gallery';
+$nav['website/database.php'] = 'Database';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,6 +44,7 @@ $nav['database.php'] = 'Database';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
   <title>
     <?php echo $title; ?>
   </title>
@@ -52,10 +53,6 @@ $nav['database.php'] = 'Database';
 
 <body class="<?php echo $body; ?>">
   <header>
-    <div class="inner-header">
-      <a href="index.php">
-        <img id="logo" src="images/logo.png" alt="logo">
-      </a>
       <!-- <nav>
 <ul>
 <li><a href="">Home</a></li>
@@ -74,7 +71,7 @@ $nav['database.php'] = 'Database';
             if (THIS_PAGE == $key) {
               echo '<li><a style = "color:red;" href=" ' . $key . '">' . $value . ' </a></li>';
             } else {
-              echo '<li><a style = "color:green;" href=" ' . $key . '">' . $value . ' </a></li>';
+              echo '<li><a style = "color:white;" href=" ' . $key . '">' . $value . ' </a></li>';
             }
           } // end foreach
           ?>
