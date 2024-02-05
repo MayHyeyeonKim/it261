@@ -101,7 +101,6 @@
                 <li><a href="weeks/week4/arithmetic-form.php">arithmetic-form.php</a></li>
                 <li><a href="weeks/week4/celcius.php">celcius.php</a></li>
             </ol>
-<<<<<<< HEAD
             <h3>Week 5</h3>
             <ol>
                 <li><a href="weeks/week5/calculator.php">calculator.php</a></li>
@@ -113,8 +112,6 @@
                 <li><a href="weeks/week5/currency4.php">currency4.php</a></li>
                 <li><a href="weeks/week5/null.php">null.php</a></li>
             </ol>
-=======
->>>>>>> parent of de679fc (weeks/week5/currency1,2,3,4 & null.php)
         </aside>
 
         <footer>

@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency - if/else - EXTRA CREDIT (20 points)</title>
+    <title>Currency 3 sticky form</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-<h1> Currency - if/else - EXTRA CREDIT (20 points)</h1>
-
+    <h1> Currency3 - Sticky!</h1>
     <!-- https://www.geeksforgeeks.org/how-to-prevent-xss-with-html-php/ -->
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
         <fieldset>
@@ -143,60 +142,25 @@
             if (!empty($name && $email && $amount && $currency && $bank)) {
 
                 echo '
-
 <div class="box">
+<h2>Hello ' . $name . ',</h2>
+<p>You now have <b> $' . number_format($dollars, 2) . ' American dollars</b> and we 
+will be emailing you at <b>' . $email . '</b> with your information, as well 
+as depositing your funds at <b> ' . $bank . ' bank!</b></p>
 
-<h2>Hello, ' . $name . '</h2>
-<p>You now have $' . number_format($dollars, 2) . ' American Dollars 
-and it will be deposited in <b>' . $bank . '</b> and we will email you at <b>
-' . $email . '</b> in the next 24 hours!</p>
+
 </div>
+
 ';
 
-if ($dollars >= 10000) {
-    echo "<div class='box happy'>
-    <h2> I am REALLY happy, because I have $$dollars American Dollars</h2>
-    <iframe width='560' height='370'
-    src='https://www.youtube.com/embed/O5APc0z49wg'>
-    </iframe>
-    </div>";
-    } else {
-        echo "<div class='box sad'>
-        <h2>I am NOT happy because I have $$dollars American Dollars</h2>
-        <iframe width='560' height='370'
-        src='https://www.youtube.com/embed/l5aZJBLAu1E'>
-        </iframe>
-        </div>";
+            }
+
+
         }
-}
-        }
+
     }
+    
     ?>
-
-
-
-
-
-    <div class="line">
-    </div>
-
-    <footer>
-<ul>
-        <li>Copyright &copy;
-            2024</li>
-        <li>All Rights Reserved</li>
-        <li><a href="../index.php">Web Design by May</a></li>
-        <li><a id="html-checker" href="#">HTML Validation</a></li>
-        <li><a id="css-checker" href="#">CSS Validation</a></li>
-        </ul>
-        
-        <script>
-                document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
-                document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-        </script>  
-</footer>
-
-
 
 </body>
 
