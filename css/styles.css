@@ -1,13 +1,13 @@
 * {
     padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    background: #FAF0E6;
+    background: #f8f6f4;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 header {
     max-width: 1200px;
     margin: 20px auto;
@@ -23,40 +23,59 @@ a {
 }
 
 .may-main {
+    opacity: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
+    width: auto;
+    margin: 40px 0px 0px 0px;
 }
 
 .php-logo {
+    /* opacity: 90%; */
     float: left;
-    width: 120px;
+    width: 8%;
     height: auto;
     margin-right: 20px;
 }
 
 h1 {
     float: right;
-    margin-top: 20;
+    /* margin-top: 20; */
+}
+
+.logo{
+    width: 100%;
+    height: 100px;
 }
 
 h1 a {
-    text-decoration: none;
-    background: linear-gradient(45deg, #c0bfc7, #363062, #FDEEDC, #E38B29);
-    background-size: 200% 200%;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-position 0.3s;
+    /* text-decoration: none; */
+    /* background: linear-gradient(60deg, #363062,#f8f6f4, #edb6c8, #f8f6f4); */
+    /* background-size: 200% 200%; */
+    /* color: #363062; */
+    /* padding: 5px 10px; */
+    /* border-radius: 50px; */
+    /* transition: background-position 0.3s; */
 }
 
 h1 a:hover {
     background-position: right bottom;
 }
 
+.BIG {
+    opacity: 50%;
+    text-align: right;
+    font-size: 14px;
+    margin: 0;
+
+}
+
 nav {
     height: 60px;
-    background: #363062;
+    background: #a65676;
+    opacity: 30%;
     line-height: 60px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -76,7 +95,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #751fae;
+    color: #993772;
     /* background: rgba(255, 255, 255, 0.1); */
     border-bottom: 2px dashed white;
 
@@ -201,7 +220,6 @@ main img.screenshots:hover {
 h1 {
     text-align: center;
     font-size: 3em;
-    margin: 20px 0;
 }
 
 

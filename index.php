@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,13 +18,13 @@
 
 <body>
     <header>
-        <div class="may-main">    
+        <div class="may-main">
             <div class="php-logo"><a href="index.php"><img src="images/php-logo.svg" alt="Php Logo" /></a></div>
-            <h1><a href="index.php">May's Portal Page</a></h1>
+            <h1><a href="index.php"><img class="logo" src="images/title.png"></a></h1>
         </div>
 
-        <h2>The navigation below represents our BIG Assignments. </h2>
-        <?php include('includes/header.php');?>
+        <p class="BIG">📌 The navigation below represents my BIG Assignments.</p>
+        <?php include('includes/header.php'); ?>
     </header>
     <div id="wrapper">
         <!-- <nav>
@@ -35,7 +34,7 @@
                 <li><a href="./website/calculator.php">Calculator</a></li>
                 <li><a href="">Email</a></li>
                 <li><a href="">Database</a></li>
-                <li><a href="">Gallery</a></li>
+                <li><a href="">Gallery</a></li>👇🏻
             </ul>
         </nav> -->
 
@@ -111,6 +110,13 @@
                 <li><a href="weeks/week5/currency3.php">currency3.php</a></li>
                 <li><a href="weeks/week5/currency4.php">currency4.php</a></li>
                 <li><a href="weeks/week5/null.php">null.php</a></li>
+            </ol>
+            <h3>Week 6</h3>
+            <ol>
+                <li><a href="weeks/week6/form.php">form.php</a></li>
+                <li><a href="weeks/week6/form2.php">form2.php</a></li>
+                <li><a href="weeks/week6/functions.php">functions.php</a></li>
+                <li><a href="weeks/week6/thx.php">thx.php</a></li>
             </ol>
         </aside>
 
