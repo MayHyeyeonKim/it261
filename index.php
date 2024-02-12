@@ -26,18 +26,7 @@
         <p class="BIG">📌 The navigation below represents my BIG Assignments.</p>
         <?php include('includes/header.php'); ?>
     </header>
-    <div id="wrapper">
-        <!-- <nav>
-            <ul>
-                <li><a href="./website/daily.php">Switch</a></li>
-                <li><a href="./website/troubleshoot.php">Troubleshoot</a></li>
-                <li><a href="./website/calculator.php">Calculator</a></li>
-                <li><a href="">Email</a></li>
-                <li><a href="">Database</a></li>
-                <li><a href="">Gallery</a></li>👇🏻
-            </ul>
-        </nav> -->
-
+    <div id="wrapper" class="clearfix">
         <main>
             <h2><i class="fa fa-heart" style="font-size:20px;color:red"></i>About May </h2>
             <div class="profile-box-wrapper">
@@ -119,21 +108,22 @@
                 <li><a href="weeks/week6/thx.php">thx.php</a></li>
             </ol>
         </aside>
-
+    </div>
+    <div id="wrapper2">
         <footer>
-            <ul>
-                <li>Copyright &copy; 2024
-                </li>
-                <li>All Rights Reserved </li>
-                <li><a href="">Terms of use</a></li>
-                <li><a href="index.php">Web Design by May(Hyeyeon)</a></li>
-                <li> <a id="html-checker" href="#">Check HTML</a></li>
-                <li><a id="css-checker" href="#">Check CSS</a></li>
-            </ul>
-            <script>
-                document.getElementById("html-checker").setAttribute("href", "https://validator.w3.org/nu/?doc=" + location.href);
-                document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-            </script>
+                <ul>
+                    <li>Copyright &copy; 2024
+                    </li>
+                    <li>All Rights Reserved </li>
+                    <li><a href="">Terms of use</a></li>
+                    <li><a href="index.php">Web Design by May(Hyeyeon)</a></li>
+                    <li> <a id="html-checker" href="#">Check HTML</a></li>
+                    <li><a id="css-checker" href="#">Check CSS</a></li>
+                </ul>
+                <script>
+                    document.getElementById("html-checker").setAttribute("href", "https://validator.w3.org/nu/?doc=" + location.href);
+                    document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+                </script>
         </footer>
     </div>
 </body>

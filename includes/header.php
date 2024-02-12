@@ -39,31 +39,6 @@ $nav['website/database.php'] = 'Database';
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="css/styles.css" type="text/css" rel="stylesheet" />
-  <title>
-    <?php echo $title; ?>
-  </title>
-  <link href="css/styles.css" type="text/css" rel="stylesheet">
-</head>
-
-<body class="<?php echo $body; ?>">
-  <header>
-      <!-- <nav>
-<ul>
-<li><a href="">Home</a></li>
-<li><a href="">About</a></li>
-<li><a href="">Daily</a></li>
-<li><a href="">Project</a></li>
-<li><a href="">Contact</a></li>
-<li><a href="">Gallery</a></li>
-</ul>
-</nav> -->
-
       <nav>
         <ul>
           <?php
@@ -73,11 +48,7 @@ $nav['website/database.php'] = 'Database';
             } else {
               echo '<li><a style = "color:white;" href=" ' . $key . '">' . $value . ' </a></li>';
             }
-          } // end foreach
+          }
           ?>
         </ul>
       </nav>
-
-    </div>
-    <!-- end inner header -->
-  </header>

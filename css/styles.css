@@ -10,10 +10,24 @@ body {
 
 header {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 #wrapper {
+    padding: 20px;
+    border-radius: 0.5%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #f8eef1;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#wrapper2 {
     max-width: 1200px;
     margin: 20px auto;
 }
@@ -47,7 +61,7 @@ h1 {
 
 .logo{
     width: 100%;
-    height: 100px;
+    height: 200px;
 }
 
 h1 a {
@@ -68,11 +82,12 @@ h1 a:hover {
     opacity: 50%;
     text-align: right;
     font-size: 14px;
-    margin: 0;
+    margin-bottom: 0;
 
 }
 
 nav {
+    padding-top: 0;
     height: 60px;
     background: #a65676;
     opacity: 30%;
@@ -187,17 +202,27 @@ footer {
     height: 50px;
     line-height: 50px;
     background: rgba(255, 255, 255, 0.2);
+    border-radius: 1%;
     /* Adding transparency */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
     /* Spread items horizontally */
     padding: 0 20px;
 }
 
+footer ul {
+    float: left;
+    margin: 0 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
 footer li {
     float: left;
-    margin: 0 30px;
+    margin: 0 20px;
     list-style-type: none;
 
 }
