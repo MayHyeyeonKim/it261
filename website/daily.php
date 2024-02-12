@@ -1,4 +1,5 @@
 <?php
+include('config.php');
 include('includes/header.php');
 
 switch(THIS_PAGE) {
@@ -112,6 +113,7 @@ switch($today) {
 }
 
 ?>
+
 <div id="wrapper">
 <main class="<?php echo $divClass; ?>">
     <section>
@@ -147,4 +149,5 @@ switch($today) {
     <!-- </blockfee> -->
   </aside>
 </div>
+
 <?php include 'includes/footer.php'; ?>

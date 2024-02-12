@@ -10,6 +10,10 @@ body {
     font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
 }
 
+.current{
+    color: rgb(30, 180, 207);
+}
+
 /* Navigation Styles */
 header {
     background: #f8f1cc;
@@ -162,4 +166,69 @@ h3 {
 /* Additional Styles */
 .color {
     color: #ff4500;
+}
+
+ul{
+    list-style-type: none;
+}
+
+fieldset {
+    border: 2px solid grey; 
+    padding: 5px;
+}
+
+legend {
+    padding: 5px;
+}
+
+label {
+    display:block;
+    margin-bottom:5px;
+    font-weight: bold;
+    font-size:1.2em;
+}
+
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    display:block;
+    height:30px;
+    width:100%;
+    margin-bottom:10px;
+}
+
+
+input[type=submit] {
+    display:block;
+    margin-bottom:10px;
+}
+
+
+.error {
+    display:block;
+    color:red;
+    margin-bottom:8px;
+    font-style:italic;
+}
+
+
+
+form ul {
+    margin-left:10px;
+    list-style-type:none;
+    margin-bottom:7px;
+}
+
+
+select, textarea {
+    margin-bottom:10px;
+}
+
+
+
+textarea {
+    width:100%;
+    resize: none;
+    height:140px;
 }

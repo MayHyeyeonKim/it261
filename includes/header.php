@@ -33,7 +33,7 @@ switch(THIS_PAGE) {
 $nav['website/daily.php'] = 'Switch';
 $nav['website/troubleshoot.php'] = 'Troubleshoot';
 $nav['website/calculator.php'] = 'Calculator';
-$nav['website/email.php'] = 'Email';
+$nav['website/contact.php'] = 'Contact';
 $nav['website/gallery.php'] = 'Gallery';
 $nav['website/database.php'] = 'Database';
 ?>

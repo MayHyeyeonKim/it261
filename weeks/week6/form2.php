@@ -21,7 +21,6 @@ $gender_err = '';
 $comments_err = '';
 $privacy_err = '';
 
-ob_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
