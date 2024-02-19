@@ -107,23 +107,30 @@
                 <li><a href="weeks/week6/functions.php">functions.php</a></li>
                 <li><a href="weeks/week6/thx.php">thx.php</a></li>
             </ol>
+            <h3>Week 7</h3>
+            <ol>
+                <li><a href="weeks/week7/form3.php">form3.php</a></li>
+                <li><a href="weeks/week7/pictures.php">pictures.php</a></li>
+                <li><a href="weeks/week7/rand.php">random.php</a></li>
+                <li><a href="weeks/week7/strings.php">strings.php</a></li>
+            </ol>
         </aside>
     </div>
     <div id="wrapper2">
         <footer>
-                <ul>
-                    <li>Copyright &copy; 2024
-                    </li>
-                    <li>All Rights Reserved </li>
-                    <li><a href="">Terms of use</a></li>
-                    <li><a href="index.php">Web Design by May(Hyeyeon)</a></li>
-                    <li> <a id="html-checker" href="#">Check HTML</a></li>
-                    <li><a id="css-checker" href="#">Check CSS</a></li>
-                </ul>
-                <script>
-                    document.getElementById("html-checker").setAttribute("href", "https://validator.w3.org/nu/?doc=" + location.href);
-                    document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-                </script>
+            <ul>
+                <li>Copyright &copy; 2024
+                </li>
+                <li>All Rights Reserved </li>
+                <li><a href="">Terms of use</a></li>
+                <li><a href="index.php">Web Design by May(Hyeyeon)</a></li>
+                <li> <a id="html-checker" href="#">Check HTML</a></li>
+                <li><a id="css-checker" href="#">Check CSS</a></li>
+            </ul>
+            <script>
+                document.getElementById("html-checker").setAttribute("href", "https://validator.w3.org/nu/?doc=" + location.href);
+                document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            </script>
         </footer>
     </div>
 </body>

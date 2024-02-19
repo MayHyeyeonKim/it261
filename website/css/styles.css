@@ -232,3 +232,9 @@ textarea {
     resize: none;
     height:140px;
 }
+
+
+img.shiba {
+    width: 500px;
+    height: 500px;
+}

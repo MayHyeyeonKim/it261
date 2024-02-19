@@ -41,10 +41,24 @@ $nav = array(
     'index.php' => 'Home',
     'about.php' => 'About',
     'daily.php' => 'Daily',
-    'project.php' => 'Project',
+    'people.php' => 'People',
     'contact.php' => 'Contact',
     'gallery.php' => 'Gallery',
 );
+
+/* Index.php image page */
+$photos[0] = 'shiba1';
+$photos[1] = 'shiba2';
+$photos[2] = 'shiba3';
+$photos[3] = 'shiba4';
+$photos[4] = 'shiba5';
+
+function random_images($photos) {
+    $my_return = '';
+    $i = rand(0,4);
+    $selected_image = ''.$photos[$i].'.png'; 
+    return $my_return = '<img src="images/'.$selected_image.'" class="shiba" alt="'.$photos[$i].'">';
+}
 
 function make_links($nav)
 {
@@ -203,11 +217,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $gender = $_POST['gender'];
     }
 
-    if (empty($_POST['phone'])) {
-        $phone_err = 'Please enter your phone number';
-    } else {
+    // if (empty($_POST['phone'])) {
+    //     $phone_err = 'Please enter your phone number';
+    // } else {
+    //     $phone = $_POST['phone'];
+    // }
+
+    if(empty($_POST['phone'])) { // if empty, type in your number
+        $phone_err = 'Your phone number please!';
+        } elseif(array_key_exists('phone', $_POST)){
+        if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
+        { // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
+        $phone_err = 'Invalid format!';
+        } else{
         $phone = $_POST['phone'];
-    }
+        } // end else
+        } // end main i
 
     if (empty($_POST['wines'])) {
         $wines_err = 'What... no wines?';
@@ -244,7 +269,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         $pLang = $_POST['pLang'];
     }
-    //our plang function
 
     function my_pLang($pLang, &$pLangerr)
     {
@@ -280,7 +304,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_POST['pLang'],
     )
     ) {
-        $to = 'hkim7963@gmail.com';
+        // $to = 'hkim7963@gmail.com';
+        $to = 'szemeo@mystudentswa.com.';
         $subject = 'Test email on ' . date('m/d/y, h i A');
         $body = '
     First Name: ' . $first_name . ' ' . PHP_EOL . '
@@ -307,7 +332,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $email &&
             $phone &&
             $comments &&
-            $privacy)
+            $privacy &&
+            preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
         ) {
             mail($to, $subject, $body, $headers);
             header('Location:thx.php');

@@ -7,19 +7,16 @@ include('./includes/header.php'); ?>
     <img src="images/twelve.jpg" alt="twelve">
   </div>
 
-  <main>
-    <h1>Welcome to my first PHP journey!</h1>
-    <h2>I am going to learn PHP!</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut neque libero, cursus nec nisl ut, pretium
-      posuere orci. Sed laoreet venenatis massa, in vulputate metus posuere sed. Suspendisse condimentum
-      tempus consectetur. Morbi eget ex ipsum. Pellentesque interdum sollicitudin ex, vitae dictum est iaculis
-      id. Ut ut maximus sapien, sit amet vulputate urna. Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit. Nulla vulputate consequat leo, et cursus ante. </p>
-    <h2>Let's gooooo!!</h2>
-    <p>Sed commodo ante ut libero luctus sagittis. Maecenas consequat, elit ut bibendum dignissim, dui est
-      elementum tellus, a dignissim nibh ante quis nisi. Donec leo neque, dignissim at pretium in, dictum at
-      magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-  </main>
+
+  <main class="index">
+        <h1>Random Image Function Page</h1>
+        <?= random_images($photos);?>
+        <p>Lorem ipsum dolor sit amet consectetur 
+        Recusandae dolor molestiae ipsum voluptate deserunt quis, suscipit perferendis veritatis voluptatem, modi, corrupti pariatur totam similique consequuntur accusantium optio esse adipisci quae unde consequatur minima expedita quod neque accusamus? Maiores.
+        Doloribus, maiores! Itaque, error ex sint illo ut eius dolor nemo molestias veniam, ab id quisquam est odio eaque blanditiis. Nesciunt ipsum enim adipisci. Laborum exercitationem sit a ut aperiam?
+        </p>
+
+    </main>
 
   <aside>
     <h3>May's Info!</h3>
