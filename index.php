@@ -111,6 +111,7 @@
             <ol>
                 <li><a href="weeks/week7/form3.php">form3.php</a></li>
                 <li><a href="weeks/week7/pictures.php">pictures.php</a></li>
+                <li><a href="weeks/week7/treasure-hunt.php">treasure-hunt.php</a></li>
                 <li><a href="weeks/week7/rand.php">random.php</a></li>
                 <li><a href="weeks/week7/strings.php">strings.php</a></li>
             </ol>

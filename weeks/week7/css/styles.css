@@ -97,3 +97,15 @@ table {
 td {
     border: 1px solid rgb(52, 82, 214);
 }
+table td {
+    width: 150px;
+}
+.details {
+    /* font-weight: bold; */
+}
+
+.detail-line {
+    border: none;
+    border-top: 1px solid #000; /* 상단에 검은색 선을 표시 */
+    margin: 10px 0; /* 선 위아래에 마진을 추가 */
+}
