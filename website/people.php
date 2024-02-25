@@ -1,9 +1,9 @@
 <?php
-$people['Malanie_Brown'] = 'Scary_Scary Spice';
-$people['Melanie_Chisholm'] = 'Sport_Sporty Spice';
-$people['Emma_Bunton'] = 'Babyy_Baby Spice';
-$people['Geri_Halliwell'] = 'Ginge_Ginger Spice';
-$people['Victoria_Beckham'] = 'Poshh_Posh Spice';
+$people['Malanie_Brown'] = 'Scary_Scary Spice <br>Known for her fierce attitude and leopard print outfits.';
+$people['Melanie_Chisholm'] = 'Sport_Sporty Spice <br>Distinguished by her athletic appearance and casual style.';
+$people['Emma_Bunton'] = 'Babyy_Baby Spice <br>Identified by her youthful look and signature pigtails.';
+$people['Geri_Halliwell'] = 'Ginge_Ginger Spice <br>Recognized for her vibrant red hair and bold fashion choices.';
+$people['Victoria_Beckham'] = 'Poshh_Posh Spice <br>Characterized by her chic and fashionable ensembles.';
 // variable, key, and value
 // $name               $image
 ?>
@@ -22,22 +22,23 @@ $people['Victoria_Beckham'] = 'Poshh_Posh Spice';
 <h1>May's Table of images HW 7</h1>
 <h2>Spice Girls</h2>
 <p>The Spice Girls are an English girl group formed in 1994, consisting of Melanie Brown, Melanie Chisholm, Emma Bunton, Geri Halliwell and Victoria Beckham.</p>
-<ul style="text-align: center; margin-top: 5px; font-size: 20px;">
 <p class="subheading">Each member of the Spice Girls is known by a unique nickname:</p>
-  <li>Melanie Brown - "Scary Spice"</li>
-  <li>Melanie Chisholm - "Sporty Spice"</li>
-  <li>Emma Bunton - "Baby Spice"</li>
-  <li>Geri Halliwell - "Ginger Spice"</li>
-  <li>Victoria Beckham - "Posh Spice"</li>
+<ul style="text-align: center; margin-top: 5px; font-size: 20px;">
+<li>Melanie Brown - "Scary Spice"</li>
+<li>Melanie Chisholm - "Sporty Spice"</li>
+<li>Emma Bunton - "Baby Spice"</li>
+<li>Geri Halliwell - "Ginger Spice"</li>
+<li>Victoria Beckham - "Posh Spice"</li>
+
 </ul>
 
     <div class= "gotomiddle">
         
         <table>
         <tr>
-            <th>image</th>
-            <th>name</th>
-            <th>nickname</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Nickname & Description</th>
         </tr>
         <?php foreach($people as $name => $image)   :?>
         <tr>

@@ -51,9 +51,8 @@ $nav = array(
     'index.php' => 'Home',
     'about.php' => 'About',
     'daily.php' => 'Daily',
-    'people.php' => 'People',
+    'people.php' => 'Gallery',
     'contact.php' => 'Contact',
-    'gallery.php' => 'Gallery',
 );
 
 /* Index.php image page */
