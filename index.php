@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +19,7 @@
     <header>
         <div class="may-main">
             <div class="php-logo"><a href="index.php"><img src="images/php-logo.svg" alt="Php Logo" /></a></div>
-            <h1><a href="index.php"><img class="logo" src="images/title.png"></a></h1>
+            <h1><a href="index.php"><img class="logo" src="images/title.png" alt="Site Title"></a></h1>
         </div>
 
         <p class="BIG">📌 The navigation below represents my BIG Assignments.</p>
@@ -142,5 +141,4 @@
         </footer>
     </div>
 </body>
-
 </html>
