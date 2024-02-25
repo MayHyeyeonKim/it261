@@ -1,6 +1,0 @@
-[25-Feb-2024 10:06:20 UTC] PHP Warning:  Undefined variable $id in /home/maybemay/public_html/it261/weeks/week8/people-view.php on line 10
-[25-Feb-2024 10:06:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/maybemay/public_html/it261/weeks/week8/people-view.php:20
-Stack trace:
-#0 /home/maybemay/public_html/it261/weeks/week8/people-view.php(20): mysqli_query()
-#1 {main}
-  thrown in /home/maybemay/public_html/it261/weeks/week8/people-view.php on line 20
