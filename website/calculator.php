@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency - if/else - EXTRA CREDIT (20 points)</title>
-    <link href="css/styles2.css" type="text/css" rel="stylesheet">
+    <link href="css/calculator.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>

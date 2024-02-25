@@ -25,7 +25,7 @@ switch(THIS_PAGE) {
       $body = 'contact inner';
       break;
 
-  case 'gallery.php':
+  case 'people.php':
       $title = 'Gallery Page';
       break;
 }
@@ -34,7 +34,7 @@ $nav['website/daily.php'] = 'Switch';
 $nav['website/troubleshoot.php'] = 'Troubleshoot';
 $nav['website/calculator.php'] = 'Calculator';
 $nav['website/contact.php'] = 'Contact';
-$nav['website/gallery.php'] = 'Gallery';
+$nav['website/people.php'] = 'Gallery';
 $nav['website/database.php'] = 'Database';
 ?>
 <!DOCTYPE html>

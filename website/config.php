@@ -3,6 +3,11 @@ ob_start();
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
 switch (THIS_PAGE) {
+    // case '':
+    //     $title = 'May\'s Home';
+    //     $body = 'home';
+    //     break;
+
     case 'index.php':
         $title = 'May\'s Home';
         $body = 'home';
@@ -33,11 +38,16 @@ switch (THIS_PAGE) {
     case 'thx.php':
         $title = 'Thanks Page';
         break;
+    
+    case 'people.php':
+        $title = 'People Page';
+        break;
 
 }
 
 // my navigational array!
 $nav = array(
+    // '' => 'Home',
     'index.php' => 'Home',
     'about.php' => 'About',
     'daily.php' => 'Daily',
