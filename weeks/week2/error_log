@@ -8,3 +8,11 @@
 [15-Jan-2024 20:28:52 UTC] PHP Warning:  Undefined variable $z in /home/maybemay/public_html/it261/weeks/week2/var.php on line 35
 [16-Jan-2024 08:45:52 UTC] PHP Warning:  Undefined variable $z in /home/maybemay/public_html/it261/weeks/week2/var.php on line 35
 [17-Jan-2024 22:59:49 UTC] PHP Warning:  Undefined variable $z in /home/maybemay/public_html/it261/weeks/week2/var.php on line 35
+[19-Feb-2024 10:00:02 America/Los_Angeles] PHP Warning:  Array to string conversion in /home/maybemay/public_html/it261/weeks/week2/var2.php on line 83
+[19-Feb-2024 18:00:14 UTC] PHP Warning:  Undefined variable $z in /home/maybemay/public_html/it261/weeks/week2/var.php on line 35
+[19-Feb-2024 10:08:46 America/Los_Angeles] PHP Warning:  Array to string conversion in /home/maybemay/public_html/it261/weeks/week2/var2.php on line 83
+[19-Feb-2024 18:08:55 UTC] PHP Warning:  Undefined variable $z in /home/maybemay/public_html/it261/weeks/week2/var.php on line 35
+[19-Feb-2024 20:59:52 UTC] PHP Warning:  Undefined variable $z in /home/maybemay/public_html/it261/weeks/week2/var.php on line 35
+[19-Feb-2024 19:02:54 America/Los_Angeles] PHP Warning:  Array to string conversion in /home/maybemay/public_html/it261/weeks/week2/var2.php on line 83
+[23-Feb-2024 19:35:26 America/Los_Angeles] PHP Warning:  Array to string conversion in /home/maybemay/public_html/it261/weeks/week2/var2.php on line 83
+[24-Feb-2024 03:35:26 UTC] PHP Warning:  Undefined variable $z in /home/maybemay/public_html/it261/weeks/week2/var.php on line 35

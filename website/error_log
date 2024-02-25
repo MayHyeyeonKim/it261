@@ -1,0 +1,11 @@
+[12-Feb-2024 09:37:12 UTC] PHP Warning:  Undefined variable $title in /home/maybemay/public_html/it261/website/includes/header.php on line 9
+[12-Feb-2024 09:37:12 UTC] PHP Warning:  Undefined variable $body in /home/maybemay/public_html/it261/website/includes/header.php on line 14
+[12-Feb-2024 09:45:26 UTC] PHP Warning:  Undefined variable $title in /home/maybemay/public_html/it261/website/includes/header.php on line 9
+[12-Feb-2024 09:45:26 UTC] PHP Warning:  Undefined variable $body in /home/maybemay/public_html/it261/website/includes/header.php on line 14
+[12-Feb-2024 09:59:02 UTC] PHP Warning:  Undefined variable $body in /home/maybemay/public_html/it261/website/includes/header.php on line 14
+[19-Feb-2024 09:35:28 UTC] PHP Warning:  Undefined variable $body in /home/maybemay/public_html/it261/website/includes/header.php on line 14
+[19-Feb-2024 09:40:53 UTC] PHP Warning:  Undefined variable $body in /home/maybemay/public_html/it261/website/includes/header.php on line 14
+[20-Feb-2024 23:13:31 UTC] PHP Warning:  Undefined variable $body in /home/maybemay/public_html/it261/website/includes/header.php on line 14
+[20-Feb-2024 23:21:00 UTC] PHP Warning:  Undefined variable $body in /home/maybemay/public_html/it261/website/includes/header.php on line 14
+[21-Feb-2024 18:19:16 UTC] PHP Warning:  Undefined variable $body in /home/maybemay/public_html/it261/website/includes/header.php on line 14
+[21-Feb-2024 18:22:33 UTC] PHP Warning:  Undefined variable $body in /home/maybemay/public_html/it261/website/includes/header.php on line 14
