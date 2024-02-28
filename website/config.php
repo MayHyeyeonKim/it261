@@ -174,6 +174,14 @@ switch ($today) {
         break;
 
 }
+//my gallery.php
+
+$people['Malanie_Brown'] = 'Scary_Scary Spice <br>Known for her fierce attitude and leopard print outfits.';
+$people['Melanie_Chisholm'] = 'Sport_Sporty Spice <br>Distinguished by her athletic appearance and casual style.';
+$people['Emma_Bunton'] = 'Babyy_Baby Spice <br>Identified by her youthful look and signature pigtails.';
+$people['Geri_Halliwell'] = 'Ginge_Ginger Spice <br>Recognized for her vibrant red hair and bold fashion choices.';
+$people['Victoria_Beckham'] = 'Poshh_Posh Spice <br>Characterized by her chic and fashionable ensembles.';
+
 
 //my Contact's PHP
 
