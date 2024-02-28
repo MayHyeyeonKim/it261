@@ -51,7 +51,8 @@ $nav = array(
     'index.php' => 'Home',
     'about.php' => 'About',
     'daily.php' => 'Daily',
-    'people.php' => 'Gallery',
+    'gallery.php' => 'Gallery',
+    'project.php' => 'Project',
     'contact.php' => 'Contact',
 );
 

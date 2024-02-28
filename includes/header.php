@@ -34,7 +34,8 @@ $nav['website/daily.php'] = 'Switch';
 $nav['website/troubleshoot.php'] = 'Troubleshoot';
 $nav['website/calculator.php'] = 'Calculator';
 $nav['website/contact.php'] = 'Contact';
-$nav['website/people.php'] = 'Gallery';
+$nav['website/gallery.php'] = 'Gallery';
+$nav['website/project.php'] = 'Project';
 $nav['website/database.php'] = 'Database';
 ?>
 <!DOCTYPE html>
