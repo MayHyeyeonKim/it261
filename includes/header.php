@@ -36,7 +36,7 @@ $nav['website/calculator.php'] = 'Calculator';
 $nav['website/contact.php'] = 'Contact';
 $nav['website/gallery.php'] = 'Gallery';
 $nav['website/project.php'] = 'Project';
-$nav['website/database.php'] = 'Database';
+// $nav['website/database.php'] = 'Database';
 ?>
 <!DOCTYPE html>
 <html lang="en">
