@@ -2,7 +2,7 @@
 include('config.php');
 include('includes/header.php');
 ?>
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +13,7 @@ include('includes/header.php');
     <title>May's Table of images HW 7</title>
 
 </head>
-<body>
+<body> -->
 <h1>May's Table of images HW 7</h1>
 <h2>Spice Girls</h2>
 <p>The Spice Girls are an English girl group formed in 1994, consisting of Melanie Brown, Melanie Chisholm, Emma Bunton, Geri Halliwell and Victoria Beckham.</p>
