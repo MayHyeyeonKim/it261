@@ -121,6 +121,14 @@
                 <li><a href="weeks/week8/people.php">people.php</a></li>
                 <li><a href="weeks/week8/people-view.php">people-view.php</a></li>
             </ol>
+            <h3>Week 9</h3>
+            <ol>
+                <li><a href="weeks/week9/config.php">Config.php</a></li>
+                <li><a href="weeks/week9/errors.php">Errors.php</a></li>
+                <li><a href="weeks/week9/login.php">Login.php</a></li>
+                <li><a href="weeks/week9/register.php">Register.php</a></li>
+                <li><a href="weeks/week9/server.php">Server.php</a></li>
+            </ol>
         </aside>
     </div>
     <div id="wrapper2">
