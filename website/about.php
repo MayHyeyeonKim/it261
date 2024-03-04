@@ -4,6 +4,7 @@ include('./includes/header.php'); ?>
 
 <div id="wrapper">
     <div id="hero">
+    <img src="images/dog_breeds.png" alt="mysql">
         <img src="images/mysql.png" alt="mysql">
     </div>
 

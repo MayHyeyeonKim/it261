@@ -25,7 +25,7 @@ CHARACTER SET utf8mb4  COLLATE utf8mb4_unicode_ci;
     }
 
     main.index {
-        background: #fff;
+        background: #fefae0;
         padding: 20px;
         box-sizing: border-box;
     }
@@ -51,7 +51,11 @@ CHARACTER SET utf8mb4  COLLATE utf8mb4_unicode_ci;
     }
 
     th {
-        background-color: #f2f2f2;
+        background-color: #d4a373;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #faedcd;
     }
 </style>
 
