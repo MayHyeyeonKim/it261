@@ -40,7 +40,8 @@
 
                 <label>Regions</label>
                 <select name="regions">
-                    <option value="" NULL <?php if (isset($_POST['regions']) && $_POST['regions']== NULL)echo 'selected = "unselected"'; ?>>Select One!</option>
+                    <option value="" <?php if (isset($_POST['regions']) && $_POST['regions'] == "") echo 'selected="selected"'; ?>>Select One!</option>
+                    <!-- <option value="" NULL <?php if (isset($_POST['regions']) && $_POST['regions']== NULL)echo 'selected = "unselected"'; ?>>Select One!</option> -->
                     <option value="nw" <?php if (isset($_POST['regions']) && $_POST['regions']== 'nw')echo 'selected = "selected"'; ?>>Northwest</option>
                     <option value="sw" <?php if (isset($_POST['regions']) && $_POST['regions']== 'sw')echo 'selected = "selected"'; ?>>Southwest</option>
                     <option value="mw" <?php if (isset($_POST['regions']) && $_POST['regions']== 'mw')echo 'selected = "selected"'; ?>>Midwest</option>

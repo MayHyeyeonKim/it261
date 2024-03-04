@@ -31,6 +31,7 @@ include('./includes/header.php'); ?>
                     it261 GitHub repository
                 </a>
             </li>
+        </ul>
     </aside>
 </div>
 <!-- </body> -->
