@@ -2,21 +2,69 @@
 include('config.php');
 include('includes/header.php');
 ?>
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/people.css">
-    <title>May's Table of images HW 7</title>
 
-</head>
-<body> -->
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.subheading {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.gotomiddle {
+    margin: auto;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    display: block;
+    max-width: 100px; /* Adjust based on your preference */
+    height: auto;
+    margin: auto;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin-right: 10px;
+}
+</style>
+
 <h1>May's Table of images HW 7</h1>
 <h2>Spice Girls</h2>
-<p>The Spice Girls are an English girl group formed in 1994, consisting of Melanie Brown, Melanie Chisholm, Emma Bunton, Geri Halliwell and Victoria Beckham.</p>
+<p style="text-align: center; margin-top: 5px; font-size: 20px;">The Spice Girls are an English girl group formed in 1994, consisting of Melanie Brown, Melanie Chisholm, Emma Bunton, Geri Halliwell and Victoria Beckham.</p>
 <p class="subheading">Each member of the Spice Girls is known by a unique nickname:</p>
 <ul style="text-align: center; margin-top: 5px; font-size: 20px;">
 <li>Melanie Brown - "Scary Spice"</li>

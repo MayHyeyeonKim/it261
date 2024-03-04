@@ -15,47 +15,102 @@ CHARACTER SET utf8mb4  COLLATE utf8mb4_unicode_ci;
 
  */
 ?>
+
+<style>
+    #wrapper {
+        max-width: 100%;
+        margin: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    main.index {
+        background: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    main.index table {
+        width: auto;
+        max-width: 100%;
+        margin: auto;
+        border-collapse: collapse;
+        table-layout: fixed;
+        /* This helps to prevent the table from expanding past its intended size */
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        /* Break words to prevent overflow */
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+
 <div id="wrapper">
 
     <main class="index">
-    <h1>Welcome to my database on dog breeds</h1>
+        <h1>Welcome to my database on dog breeds</h1>
 
-    <table>
-                <tr>
-                    <th>Dog Breed</th>
-                    <th>Origin</th>
-                    <th>Temperament</th>
-                    <th>More Information</th>
-                </tr>
+        <table>
+            <tr>
+                <th>Dog Breed</th>
+                <th>Origin</th>
+                <th>Temperament</th>
+                <th>More Information</th>
+            </tr>
 
-        <?php
+            <?php
 
-$sql = 'SELECT * FROM dog_breeds';
+            $sql = 'SELECT * FROM dog_breeds';
 
-$iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__, __LINE__, mysqli_connect_error()));
+            $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__, __LINE__, mysqli_connect_error()));
 
-$result = mysqli_query($iConn, $sql) or die(myError(__FILE__, __LINE__, mysqli_error($iConn)));
+            $result = mysqli_query($iConn, $sql) or die(myError(__FILE__, __LINE__, mysqli_error($iConn)));
 
-if (mysqli_num_rows($result) > 0) {
-    //-- associative array $row
+            if (mysqli_num_rows($result) > 0) {
+                //-- associative array $row
+            
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo '
+        <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;"><b>' . $row['breed_name'] . '</b></td>
+        <td style="border: 1px solid #ddd; padding: 8px;">' . $row['origin'] . '</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">' . $row['temperament'] . '</td>
+        <td style="border: 1px solid #ddd; padding: 8px;"><p>For more information about ' . $row['breed_name'] . ' <br>Click <a href="project-view.php?id=' . $row['id'] . '" >here</a></p></td>
+    </tr>';
 
-    while ($row = mysqli_fetch_assoc($result)) {
-        echo '
-                <tr>
-                    <td><b>' . $row['breed_name'] . '</b></td>
-                    <td>' . $row['origin'] . '</td>
-                    <td>' . $row['temperament'] . '</td>
-                    <td><p>For more information about ' . $row['breed_name'] . ' <br>Click <a href="project-view.php?id=' . $row['id'] . '" >here</a></p></td>
-                </tr>';
-
-    } // close while loop
-
-} //close if statment
-
-?>
+                } // close while loop
+            
+            } //close if statment
+            
+            ?>
 
         </table>
     </main>
+    <aside>
+        <h3>May's Info!</h3>
+        <ul>
+            <li>
+                <a href="https://github.com/mayhyeyeonkim" title="Link to Github Profile">
+                    GitHub Profile
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/mayhyeyeonkim/it261" title="Link to it261 GitHub repository">
+                    it261 GitHub repository
+                </a>
+            </li>
+    </aside>
 </div><!-- End wrapper -->
 
 <?php
@@ -67,4 +122,4 @@ if (mysqli_num_rows($result) > 0) {
 @mysqli_close($iConn);
 
 include 'includes/footer.php'
-?>
+    ?>

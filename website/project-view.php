@@ -53,7 +53,7 @@ echo '
         ';
 ?>
         <p>Content sourced from various dog breed websites</p>
-        <p><a href="./project.php">Return to the project.php page</a></p>
+        <p><a href="./project.php">Return to the project page</a></p>
     </div><!-- breed content end -->
     </main>
 
