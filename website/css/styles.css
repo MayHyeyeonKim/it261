@@ -212,3 +212,50 @@ img.shiba {
     width: 500px;
     height: 500px;
 }
+
+/* project.php */
+main.index {
+    background: #fefae0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main.index table {
+    width: auto;
+    max-width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #d4a373;
+}
+
+tr:nth-child(odd) {
+    background-color: #faedcd;
+}
+
+/* gallery */
+
+.gotomiddle {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}

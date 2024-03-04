@@ -3,7 +3,7 @@ include('config.php');
 include('includes/header.php');
 ?>
 
-<style>
+<!-- <style>
 body {
     font-family: Arial, sans-serif;
 }
@@ -60,18 +60,18 @@ footer li {
     display: inline;
     margin-right: 10px;
 }
-</style>
+</style> -->
 
-<h1>May's Table of images HW 7</h1>
-<h2>Spice Girls</h2>
-<p style="text-align: center; margin-top: 5px; font-size: 20px;">The Spice Girls are an English girl group formed in 1994, consisting of Melanie Brown, Melanie Chisholm, Emma Bunton, Geri Halliwell and Victoria Beckham.</p>
-<p class="subheading">Each member of the Spice Girls is known by a unique nickname:</p>
-<ul style="text-align: center; margin-top: 5px; font-size: 20px;">
-<li>Melanie Brown - "Scary Spice"</li>
+<h1 style="text-align: center; margin-top: 5px;">May's Table of images HW 7</h1>
+<h2 style="text-align: center; margin-top: 5px;">Spice Girls</h2>
+<!-- <p style="text-align: center; margin-top: 5px; font-size: 20px;">The Spice Girls are an English girl group formed in 1994, consisting of Melanie Brown, Melanie Chisholm, Emma Bunton, Geri Halliwell and Victoria Beckham.</p>
+<p style="text-align: center; margin-top: 5px; font-size: 20px;">Each member of the Spice Girls is known by a unique nickname:</p>
+<ul style="text-align: center; margin-top: 5px; font-size: 20px;"> -->
+<!-- <li>Melanie Brown - "Scary Spice"</li>
 <li>Melanie Chisholm - "Sporty Spice"</li>
 <li>Emma Bunton - "Baby Spice"</li>
 <li>Geri Halliwell - "Ginger Spice"</li>
-<li>Victoria Beckham - "Posh Spice"</li>
+<li>Victoria Beckham - "Posh Spice"</li> -->
 
 </ul>
 

@@ -16,52 +16,7 @@ CHARACTER SET utf8mb4  COLLATE utf8mb4_unicode_ci;
  */
 ?>
 
-<style>
-    #wrapper {
-        max-width: 100%;
-        margin: auto;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    main.index {
-        background: #fefae0;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    main.index table {
-        width: auto;
-        max-width: 100%;
-        margin: auto;
-        border-collapse: collapse;
-        table-layout: fixed;
-        /* This helps to prevent the table from expanding past its intended size */
-    }
-
-    th,
-    td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        word-wrap: break-word;
-        /* Break words to prevent overflow */
-    }
-
-    th {
-        background-color: #d4a373;
-    }
-
-    tr:nth-child(odd) {
-        background-color: #faedcd;
-    }
-</style>
-
-
 <div id="wrapper">
-
     <main class="index">
         <h1>Welcome to my database on dog breeds</h1>
 
@@ -114,6 +69,7 @@ CHARACTER SET utf8mb4  COLLATE utf8mb4_unicode_ci;
                     it261 GitHub repository
                 </a>
             </li>
+        </ul>
     </aside>
 </div><!-- End wrapper -->
 
