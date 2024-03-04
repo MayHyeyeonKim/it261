@@ -35,6 +35,7 @@ include('./includes/header.php'); ?>
                     it261 GitHub repository
                 </a>
             </li>
+        </ul>
     </aside>
 </div>
 <?php include './includes/footer.php';
