@@ -2,6 +2,10 @@
 ob_start();
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
+//project.php
+define('DEBUG', 'TRUE');  // We want to see our errors
+include('credentials.php');
+
 switch (THIS_PAGE) {
     // case '':
     //     $title = 'May\'s Home';
@@ -43,6 +47,14 @@ switch (THIS_PAGE) {
         $title = 'People Page';
         break;
 
+    case 'project.php':
+        $title = 'Project Page';
+        break;
+
+    case 'project-view.php':
+        $title = 'Project View Page';
+        break;
+
 }
 
 // my navigational array!
@@ -51,9 +63,9 @@ $nav = array(
     'index.php' => 'Home',
     'about.php' => 'About',
     'daily.php' => 'Daily',
-    'gallery.php' => 'Gallery',
     'project.php' => 'Project',
     'contact.php' => 'Contact',
+    'gallery.php' => 'Gallery',
 );
 
 /* Index.php image page */

@@ -1,72 +1,70 @@
 <?php
 include 'config.php';
-include './includes/header.php';
+include 'includes/header.php';
+/*
+how we created our table:
+CREATE TABLE dog_breeds (
+id INT(6) AUTO_INCREMENT PRIMARY KEY,
+breed_name VARCHAR(30) NOT NULL,
+origin VARCHAR(30) NOT NULL,
+temperament VARCHAR(255) NOT NULL,
+image_path VARCHAR(255),
+description longtext
+)
+CHARACTER SET utf8mb4  COLLATE utf8mb4_unicode_ci;
+
+ */
 ?>
 <div id="wrapper">
-<main>
-    <h1>Welcome to may's Project Database Class Exercise!</h1>
-<?php
-$sql = 'SELECT * FROM people';
 
-$iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
+    <main class="index">
+    <h1>Welcome to my database on dog breeds</h1>
 
-$result = mysqli_query($iConn, $sql) or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
-if(mysqli_num_rows($result) > 0) {
-    while($row = mysqli_fetch_assoc($result)) {
-    echo '
-    <h2>Information about: '.$row['first_name'].'</h2>
-    <ul>
-    <li><b>First Name:</b> '.$row['first_name'].'</li>
-    <li><b>Last Name:</b> '.$row['last_name'].'</li>
-    <li><b>Birthday:</b> '.$row['birthdate'].'</li>
-    </ul>
-    <p>For more information about '.$row['first_name'].',
-    click <a href="people-view.php?id='.$row['people_id'].' ">here</a></p>
-    ';
-    }
-    } else {
-    echo 'Nobody is home!';
-    }
-    @mysqli_free_result($result);
-    @mysqli_close($iConn);
-    ?>
+    <table>
+                <tr>
+                    <th>Dog Breed</th>
+                    <th>Origin</th>
+                    <th>Temperament</th>
+                    <th>More Information</th>
+                </tr>
+
+        <?php
+
+$sql = 'SELECT * FROM dog_breeds';
+
+$iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__, __LINE__, mysqli_connect_error()));
+
+$result = mysqli_query($iConn, $sql) or die(myError(__FILE__, __LINE__, mysqli_error($iConn)));
+
+if (mysqli_num_rows($result) > 0) {
+    //-- associative array $row
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo '
+                <tr>
+                    <td><b>' . $row['breed_name'] . '</b></td>
+                    <td>' . $row['origin'] . '</td>
+                    <td>' . $row['temperament'] . '</td>
+                    <td><p>For more information about ' . $row['breed_name'] . ' <br>Click <a href="project-view.php?id=' . $row['id'] . '" >here</a></p></td>
+                </tr>';
+
+    } // close while loop
+
+} //close if statment
+
+?>
+
+        </table>
     </main>
-    <aside>
-<!-- <h3>I will displaying my random images here!</h3>
-<?php
-$photos = array(
-    'people1.jpg',
-    'people2.jpg',
-    'people3.jpg',
-    'people4.jpg',
-    'people5.jpg',
-);
-
-function random_image($photos)
-{
-    if (empty($photos)) {
-        return '<p>No images available.</p>';
-    }
-
-    $index = rand(0, count($photos) - 1);
-    $filename = $photos[$index];
-    $filepath = 'images/' . $filename;
-
-    if (!file_exists($filepath)) {
-        return '<p>Image not found.</p>';
-    }
-
-    return '<img src="' . $filepath . '" alt="' . $filename . '">';
-}
-
-echo random_image($photos);
-?> -->
-
-
-
-</aside>
-</div>
-<!-- end wrapper -->
+</div><!-- End wrapper -->
 
 <?php
-include './includes/footer.php';
+
+//release web server resources
+@mysqli_free_result($result);
+
+//close connection to mysql
+@mysqli_close($iConn);
+
+include 'includes/footer.php'
+?>

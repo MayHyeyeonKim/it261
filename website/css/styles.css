@@ -238,3 +238,196 @@ img.shiba {
     width: 500px;
     height: 500px;
 }
+
+/* for Gallery.php */
+/* Global reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background: beige;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Form container */
+form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset styling */
+fieldset {
+    border: 1px solid thistle;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Center-aligned text */
+.text-center {
+    text-align: center;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+    color: #333;
+    /* Dark grey text for readability */
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2c3e50;
+    /* A darker shade for main heading */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    color: #3498db;
+    /* A soft blue for secondary headings */
+}
+
+p {
+    font-size: 1em;
+    margin-top: 1px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+    /* A slightly lighter grey for paragraph text */
+}
+
+ul {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    list-style-type: none;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+li {
+    color: #8e44ad;
+}
+
+.subheading {
+    font-size: 18px;
+    /* Set the size slightly smaller than main headings */
+    font-weight: bold;
+    /* Make it bold to stand out */
+    color: #3498db;
+    /* Choose a color that fits your design */
+    margin-bottom: 10px;
+    /* Add some space below the subheading */
+    text-align: center;
+    /* Center-align the subheading */
+}
+
+/* Table styling */
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Footer styling */
+footer {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    clear: both;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333;
+    font-size: 14px;
+}
