@@ -19,7 +19,7 @@
                     <li><input type="radio" name="visitor" value="recruiter" <?php if(isset($_POST['visitor'])&&$_POST['visitor']=='recruiter') echo 'checked = "checked" ' ?> > Recruiter</li>
                     <li><input type="radio" name="visitor" value="programmer" <?php if(isset($_POST['visitor'])&&$_POST['visitor']=='programmer') echo 'checked = "checked" ' ?> > Programmer</li>
                     <li><input type="radio" name="visitor" value="webDev" <?php if(isset($_POST['visitor'])&&$_POST['visitor']=='webDev') echo 'checked = "checked" ' ?> > Web Developer</li>
-                    <li><input type="radio" name="visitor" value="voyeur" <?php if(isset($_POST['visitor'])&&$_POST['visitor']=='voyeur') echo 'checked = "checked" ' ?> > A regular person checking out your site!</li>
+                    <li><input type="radio" name="visitor" value="voyeur" <?php if(isset($_POST['visitor'])&&$_POST['visitor']=='voyeur') echo 'checked = "checked" ' ?> > Other</li>
                 </ul>
                 <span class="error"><?php echo $visitorErr; ?></span>
 

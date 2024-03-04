@@ -362,16 +362,17 @@ p {
 
 ul {
     width: 70%;
-    margin: 0 auto;
+    margin: 20px auto;
     margin-bottom: 20px;
     list-style-type: none;
     background-color: #ecf0f1;
     padding: 20px;
-    border-radius: 50px;
+    border-radius: 8px;
 }
 
 li {
     color: #8e44ad;
+    padding: 10px;
 }
 
 .subheading {
