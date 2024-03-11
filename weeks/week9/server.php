@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('config.php');
-// include('./includes/header.php');
+include('./includes/header.php');
 
 $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__, __LINE__, mysqli_connect_error()));
 
@@ -96,11 +96,11 @@ if (isset($_POST['login_user'])) {
     );
 
     if (empty($username)) {
-        array_push($errors, 'Username is required!!!');
+        array_push($errors, 'Username is required!');
     }
 
     if (empty($password)) {
-        array_push($errors, 'Password is required!!!');
+        array_push($errors, 'Password is required!');
     }
 
     if (count($errors) == 0) {

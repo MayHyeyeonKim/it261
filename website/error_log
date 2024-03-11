@@ -9,3 +9,35 @@
 [20-Feb-2024 23:21:00 UTC] PHP Warning:  Undefined variable $body in /home/maybemay/public_html/it261/website/includes/header.php on line 14
 [21-Feb-2024 18:19:16 UTC] PHP Warning:  Undefined variable $body in /home/maybemay/public_html/it261/website/includes/header.php on line 14
 [21-Feb-2024 18:22:33 UTC] PHP Warning:  Undefined variable $body in /home/maybemay/public_html/it261/website/includes/header.php on line 14
+[11-Mar-2024 04:05:42 UTC] PHP Warning:  Undefined variable $body in /home4/maybemay/public_html/it261/website/includes/header.php on line 14
+[11-Mar-2024 04:05:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'maybemay_mayguest1'@'fr2.fcomet.com' (using password: YES) in /home4/maybemay/public_html/it261/website/project.php:35
+Stack trace:
+#0 /home4/maybemay/public_html/it261/website/project.php(35): mysqli_connect()
+#1 {main}
+  thrown in /home4/maybemay/public_html/it261/website/project.php on line 35
+[11-Mar-2024 04:07:51 UTC] PHP Warning:  Undefined variable $body in /home4/maybemay/public_html/it261/website/includes/header.php on line 14
+[11-Mar-2024 04:07:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'maybemay_mayguest1'@'fr2.fcomet.com' (using password: YES) in /home4/maybemay/public_html/it261/website/project.php:35
+Stack trace:
+#0 /home4/maybemay/public_html/it261/website/project.php(35): mysqli_connect()
+#1 {main}
+  thrown in /home4/maybemay/public_html/it261/website/project.php on line 35
+[11-Mar-2024 04:07:52 UTC] PHP Warning:  Undefined variable $body in /home4/maybemay/public_html/it261/website/includes/header.php on line 14
+[11-Mar-2024 04:07:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'maybemay_mayguest1'@'fr2.fcomet.com' (using password: YES) in /home4/maybemay/public_html/it261/website/project.php:35
+Stack trace:
+#0 /home4/maybemay/public_html/it261/website/project.php(35): mysqli_connect()
+#1 {main}
+  thrown in /home4/maybemay/public_html/it261/website/project.php on line 35
+[11-Mar-2024 04:07:52 UTC] PHP Warning:  Undefined variable $body in /home4/maybemay/public_html/it261/website/includes/header.php on line 14
+[11-Mar-2024 04:07:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'maybemay_mayguest1'@'fr2.fcomet.com' (using password: YES) in /home4/maybemay/public_html/it261/website/project.php:35
+Stack trace:
+#0 /home4/maybemay/public_html/it261/website/project.php(35): mysqli_connect()
+#1 {main}
+  thrown in /home4/maybemay/public_html/it261/website/project.php on line 35
+[11-Mar-2024 04:18:00 UTC] PHP Warning:  Undefined variable $body in /home4/maybemay/public_html/it261/website/includes/header.php on line 14
+[11-Mar-2024 04:18:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'maybemay_mayguest1'@'fr2.fcomet.com' (using password: YES) in /home4/maybemay/public_html/it261/website/project.php:35
+Stack trace:
+#0 /home4/maybemay/public_html/it261/website/project.php(35): mysqli_connect()
+#1 {main}
+  thrown in /home4/maybemay/public_html/it261/website/project.php on line 35
+[11-Mar-2024 04:22:53 UTC] PHP Warning:  Undefined variable $body in /home4/maybemay/public_html/it261/website/includes/header.php on line 14
+[11-Mar-2024 04:29:59 UTC] PHP Warning:  Undefined variable $body in /home4/maybemay/public_html/it261/website/includes/header.php on line 14

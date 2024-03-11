@@ -152,5 +152,10 @@ figcaption {
     font-style: italic;
 }
 
-
+.error {
+    color: #d9534f;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+}
 
