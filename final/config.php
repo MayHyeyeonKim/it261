@@ -240,8 +240,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $phone_err = 'Invalid format!';
         } else{
         $phone = $_POST['phone'];
-        } // end else
-        } // end main i
+        } 
+        } 
 
     if (empty($_POST['wines'])) {
         $wines_err = 'What... no wines?';
@@ -249,7 +249,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $wines = $_POST['wines'];
     }
 
-    if ($_POST['regions'] == NULL) {
+    if (empty($_POST['regions'])) {
         $regions_err = 'Please select your region';
     } else {
         $regions = $_POST['regions'];
@@ -313,8 +313,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_POST['pLang'],
     )
     ) {
-        $to = 'hkim7963@gmail.com';
-        // $to = 'szemeo@mystudentswa.com';
+        // $to = 'hkim7963@gmail.com';
+        $to = 'szemeo@mystudentswa.com';
         $subject = 'Test email on ' . date('m/d/y, h i A');
         $body = '
     First Name: ' . $first_name . ' ' . PHP_EOL . '
@@ -324,8 +324,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     Phone Number: ' . $phone . ' ' . PHP_EOL . '
     Regions: ' . $regions . ' ' . PHP_EOL . '
     Comments: ' . $comments . ' ' . PHP_EOL . '
-    visitor: ' . $visitor . ' ' . PHP_EOL . '
-    pLang: ' . my_pLang($pLang, $pLangerr) . ' ' . PHP_EOL . '
+    Visitor: ' . $visitor . ' ' . PHP_EOL . '
+    Programming Languege: ' . my_pLang($pLang, $pLangerr) . ' ' . PHP_EOL . '
     ';
 
         $headers = array(

@@ -16,11 +16,12 @@ include('server.php');
         <fieldset>
             <label>Username</label>
             <input type="text" name="username"
+            placeholder="Enter your username"
                 value="<?php if (isset($_POST['username']))
                     echo htmlspecialchars($_POST['username']); ?>">
 
             <label>Password</label>
-            <input type="password" name="password">
+            <input type="password" name="password" placeholder="Enter your password">
 
             <button type="submit" class="btn" name="login_user">Login</button>
 

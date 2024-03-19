@@ -16,7 +16,7 @@ echo htmlspecialchars($_POST['first_name']) ;?>">
 echo htmlspecialchars($_POST['last_name']) ;?>">
 
 <label>Email</label>
-<input type="email" name="email" value="<?php if(isset($_POST['email'])) 
+<input type="text" name="email" value="<?php if(isset($_POST['email'])) 
 echo htmlspecialchars($_POST['email']) ;?>">
 
 <label>Username</label>

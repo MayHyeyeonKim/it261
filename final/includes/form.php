@@ -58,8 +58,7 @@
                     <li><input type="radio" name="privacy" value="yes" <?php if (isset($_POST['privacy'])&& $_POST['privacy'] == 'yes')echo 'checked = "checked" '; ?>>Privacy</li>
                 </ul>
                 <span class="error"><?php echo $privacy_err; ?></span>
-
+            </fieldset>
                 <input type="submit" value="Send it!">
-                </fieldset>
                 <p><a href="">Reset!</a></p>
         </form>
