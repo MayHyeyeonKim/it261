@@ -25,7 +25,7 @@ switch (THIS_PAGE) {
     case 'index.php':
         $title1 = 'May\'s Home';
         $body = 'home';
-        $headline = "Million Dollar Homes in Seattle";
+        $headline = "May's final project for IT261";
         break;
 
     case 'about.php':
