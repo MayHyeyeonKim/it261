@@ -313,8 +313,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_POST['pLang'],
     )
     ) {
-        // $to = 'hkim7963@gmail.com';
-        $to = 'szemeo@mystudentswa.com';
+        $to = 'hkim7963@gmail.com';
+        // $to = 'szemeo@mystudentswa.com';
         $subject = 'Test email on ' . date('m/d/y, h i A');
         $body = '
     First Name: ' . $first_name . ' ' . PHP_EOL . '
